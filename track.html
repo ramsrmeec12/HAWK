@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAWK I GPS Tracker</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hawki">
+        
+        <div>
+            <!-- <img src="Hawki.png" alt="" width="100px" class = "Logo"> -->
+        </div>
+        <center>
+            <h1>HAWK I</h1>
+        </center>
+        
+        <div>
+            <!-- <img src="Hawki.png" alt="" width="100px" class = "Logo"> -->
+        </div>
+    </div>
+
+    <div class="bg">
+        <img src="Hawki.jpg" alt="">
+    </div>
+
+    <center>
+        
+        <div class="Coordinates1">
+            <!-- <h1>Starting Point</h1> -->
+            <!-- <label for="lat1">Latitude :</label>
+            <input type="number" id="lat1" value="12.918324">
+            <label for="lon1">Longitude :</label>
+            <input type="number" id="lon1" value="80.239863"> -->
+        </div>
+
+        <div>
+            <h1>Drop Location</h1>
+            <label for="lat2">Latitude :</label>
+            <input type="number" id="lat2" value="12.918335">
+            <label for="lon2">Longitude :</label>
+            <input type="number" id="lon2" value="80.239922">
+        </div>
+
+        <button onclick="updateMap()">Calculate</button>
+
+    </center>
+
+
+    <div id="map"></div>
+    
+    <center>
+        <p id="distance"></p>
+    </center>   
+
+    <div class="drone_top">
+        <center>
+        <image src="drone2.jpg" class="droneImage"></image>
+        </center>
+    </div>
+    <div class="drone_bottom">
+        <center>
+            <image src="drone_bottom.jpg"></image>
+        </center>
+    </div>
+
+    <center>
+        <div class="Details" id="Details">
+            <p id="gps-status">Location : 00</p>
+            <p id="speed-status">SPEED : 00</p>
+            <p id="eta-status">ESTIMATED TIME : 00</p>            
+        </div>
+        <div id="qrcode">
+            <image src="Test Qr.png"></image>
+        </div>
+    <div class="Loading">
+        <div class="Load" id="progress-bar">
+            <!-- <h1 id="max">Max : </h1>
+            <h1 id="progress">Progress :</h1> -->
+        </div>
+    </div>
+</center>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+</body>
+</html>
